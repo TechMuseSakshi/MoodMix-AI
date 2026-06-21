@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - MoodMix AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+        <h1>MoodMix AI</h1>
+
+        <p class="subtitle">
+           Drop a track. We'll catch the vibe 🎵
+       </p>
+
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+
+          <div class="upload-section">
+
+    <label>
+        Drop Your Current Obsession
+        <span class="music-icon">♫</span>
+    </label>
+
+    <input
+    type="file"
+    id="song"
+    name="song"
+    accept=".mp3,.wav,.mpeg"
+    required
+    hidden
+>
+
+<label for="song" class="upload-btn">
+    🔥 Upload the Banger
+</label>
+
+<p id="file-name"></p>
+
+</div>
+
+            <button type="submit">
+            What's It Giving? 👀
+           </button>
+
+            
+
+        </form>
+
+    </div>
+
+    <script>
+
+document.getElementById("song").addEventListener("change", function(){
+
+    const fileName = this.files[0]?.name;
+
+    if(fileName){
+
+        document.getElementById("file-name").innerHTML =
+        "🎧 Now spinning: " + fileName;
+    }
+
+});
+
+</script>
+
+</body>
+</html>

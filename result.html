@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Analysis Result</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+
+    <div class="result-container">
+
+        <div class="logo">
+            MoodMix AI
+        </div>
+
+        <p class="subtitle">
+           We caught the vibe. Here's the verdict 🎵
+        </p>
+
+        <div class="result-card">
+
+            <div class="mood-box">
+    🎧 {{ mood }}
+</div>
+
+            <div class="info-box">
+                <span>🥁 Tempo</span>
+                <strong>{{ tempo }} BPM</strong>
+            </div>
+
+            <div class="info-box">
+               <span>⚡ Energy</span>
+                <strong>{{ energy }}</strong>
+            </div>
+
+        </div>
+
+        <a href="/dashboard" class="back-btn">
+            Drop Another Obsession 🎶
+        </a>
+
+    </div>
+
+</body>
+</html>

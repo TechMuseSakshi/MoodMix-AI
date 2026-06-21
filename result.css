@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+    135deg,
+    #050816,
+    #0B1026,
+    #130B2B
+    );
+
+    color:white;
+}
+
+.result-container{
+
+    width:650px;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:30px;
+
+    padding:50px;
+
+    text-align:center;
+
+    box-shadow:
+    0 0 50px rgba(109,76,255,0.35);
+}
+
+.logo{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#6D4CFF;
+
+    margin-bottom:10px;
+}
+
+.subtitle{
+
+    color:#A9A9B3;
+
+    margin-bottom:35px;
+}
+
+.result-card{
+
+    background:#111827;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    margin-bottom:30px;
+}
+
+.mood-box{
+
+    background:
+    linear-gradient(
+    135deg,
+    #6D4CFF,
+    #A855F7
+    );
+
+    padding:18px;
+
+    border-radius:15px;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+}
+
+
+.mood-box{
+
+     background:
+    linear-gradient(
+    135deg,
+    #6D4CFF,
+    #A855F7
+    );
+
+    padding:22px;
+
+    border-radius:18px;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+    box-shadow:0 0 30px rgba(168,85,247,0.5);
+}
+
+.info-box{
+
+    background:#1F2937;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    transition:0.3s;
+}
+
+.info-box:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(109,76,255,0.35);
+}
+
+.info-box span{
+
+    color:#A9A9B3;
+}
+
+.info-box strong{
+
+    color:white;
+}
+
+.back-btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    border-radius:15px;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:
+    linear-gradient(
+    135deg,
+    #6D4CFF,
+    #A855F7
+    );
+
+    transition:0.3s;
+}
+
+.back-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+    0 0 25px rgba(168,85,247,0.7);
+}
+
+.result-container{
+    animation:fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
