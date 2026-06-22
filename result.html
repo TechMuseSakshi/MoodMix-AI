@@ -23,8 +23,8 @@
         <div class="result-card">
 
             <div class="mood-box">
-    🎧 {{ mood }}
-</div>
+             🎧 {{ mood }}
+          </div>
 
             <div class="info-box">
                 <span>🥁 Tempo</span>
@@ -35,6 +35,57 @@
                <span>⚡ Energy</span>
                 <strong>{{ energy }}</strong>
             </div>
+
+            <div class="info-box">
+                <span>🎯 Confidence</span>
+                <strong>{{ confidence }}%</strong>
+            </div>
+
+            <div class="recommendation-box">
+
+               <h3>🎵 Recommended Songs</h3>
+
+            <div class="song-list">
+
+               {% for song in songs %}
+
+             <div class="song-card">
+                 🎵 {{ song }}
+             </div>
+
+                  {% endfor %}
+
+             </div>
+
+           </div>
+
+           <div class="recommendation-box">
+
+              <h3>🧠 Why This Mood?</h3>
+
+              <p>{{ explanation }}</p>
+
+          </div>
+
+          <div class="recommendation-box">
+
+    <h3>📊 AI Analysis Summary</h3>
+
+    <p><strong>Mood:</strong> {{ mood }}</p>
+
+    <p><strong>Tempo:</strong> {{ tempo }} BPM</p>
+
+    <p><strong>Energy:</strong> {{ energy }}</p>
+
+    <p><strong>Confidence:</strong> {{ confidence }}%</p>
+
+    <p><strong>MFCC:</strong> {{ mfcc }}</p>
+
+    <p><strong>Spectral Centroid:</strong> {{ spectral_centroid }}</p>
+
+    <p><strong>Zero Crossing Rate:</strong> {{ zero_crossing_rate }}</p>
+
+</div>
 
         </div>
 

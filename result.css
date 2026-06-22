@@ -194,3 +194,88 @@ body{
         transform:translateY(0);
     }
 }
+
+.recommendation-box{
+
+    margin-top:25px;
+
+    background:#1F2937;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    text-align:left;
+
+    transition:0.3s;
+}
+
+.recommendation-box:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(109,76,255,0.35);
+}
+
+.recommendation-box h3{
+
+    color:#A855F7;
+
+    margin-bottom:15px;
+
+    text-align:center;
+}
+
+.recommendation-box ul{
+
+    list-style:none;
+
+    padding:0;
+}
+
+.recommendation-box li{
+
+    padding:10px 0;
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+
+    color:white;
+}
+
+.recommendation-box li:last-child{
+
+    border-bottom:none;
+}
+
+.song-list{
+
+    margin-top:20px;
+}
+
+.song-card{
+
+    background:#111827;
+
+    padding:15px;
+
+    margin:12px 0;
+
+    border-radius:12px;
+
+    font-weight:500;
+
+    transition:0.3s;
+}
+
+.song-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 0 20px rgba(168,85,247,0.35);
+}
+
+.recommendation-box strong{
+    
+    color:#A855F7;
+    
+}
