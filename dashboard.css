@@ -117,3 +117,20 @@ button:hover{
     text-align:center;
     font-weight:500;
 }
+
+.footer{
+
+    position: fixed;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color:#A9A9B3;
+
+    font-size:14px;
+
+    text-align:center;
+}

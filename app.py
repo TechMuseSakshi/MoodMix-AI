@@ -30,6 +30,12 @@ def dashboard():
 def upload():
 
     song = request.files["song"]
+    allowed_extensions = ['mp3', 'wav', 'mpeg']
+
+    filename = song.filename.lower()
+
+    if not any(filename.endswith(ext) for ext in allowed_extensions):
+     return "❌ Please upload only MP3 or WAV audio files."
 
     if song:
 
